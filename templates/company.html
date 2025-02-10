@@ -26,14 +26,21 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: OnePage
-  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    table, tr, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin: 20px; 
+      padding: 10px; 
+    }
+    
+     .portfolio-description h2 {
+    text-align: center; 
+  }
+.portfolio-description table {
+    margin: 20px auto; 
+  }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -50,9 +57,18 @@
       <nav id="navmenu" class="navmenu">-
         <ul>
           <li><a href="/main">Home<br></a></li>
-          <li><a href="/announce">공고 작성</a></li>
+          <li><a href="/announce">공고 등록</a></li>
+          <li><a href="/searchAnn">공고 조회</a></li>
           <li><a href="/findEngineer">엔지니어 조회</a></li>
           <li><a href="/persent">사업 명세 관리</a></li>
+           <ul>
+            <li class="dropdown"><a href="#"><span>MyPage</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a>AA다이캐스팅님 환영합니다</a></li>
+                <li><a href="/companyedit">내정보 수정</a></li>
+                <li><a href="/message">쪽지함 확인</a></li>
+              </ul>
+          </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -66,7 +82,7 @@
     <!-- Page Title -->
     <div class="page-title accent-background">
       <div class="container">
-        <h1>기업체 여러분 환영합니다</h1>
+        <h1>기업체 여러분 환영합니다</h1><br>
         <nav class="breadcrumbs">
           <ol>
           	<li class="current">귀사의 발전에 다장이 함께 하겠습니다.</li>
@@ -79,62 +95,23 @@
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container" data-aos="fade-up">
+    
 
-        <div class="portfolio-details-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              },
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/app-1.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/product-1.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/branding-1.jpg" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/books-1.jpg" alt="">
-            </div>
-
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
-        </div>
 
         <div class="row justify-content-between gy-4 mt-4">
 
-          <div class="col-lg-8" data-aos="fade-up">
+          <div class="col-lg-8" data-aos="fade-up" >
             <div class="portfolio-description">
-              <h2>This is an example of portfolio details</h2>
+              <h2>현재 사업 진행 현황</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                <table>
+                  <tr><th>no</th> <th>공고명</th> <th>기간</th> <th>과제명</th> <th>매칭여부</th> <th>엔지니어</th> </tr>
+                  <tr><td>1</td> <td>AA다이캐스팅 지도방문</td> <td>25.02.01 ~ 25.06.30</td> <td>AA다이캐스팅 지도방문</td><td>O</td> <td>김감자</td></tr>
+                  <tr><td>2</td> <td>AA다이캐스팅 현장방문</td> <td>25.02.01 ~ 25.06.30</td> <td>AA다이캐스팅 현장방문</td><td>X</td> <td>지원자없음</td></tr>
+                </table>
               </p>
               <p>
-                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
+                
               </p>
 
               <div class="testimonial-item">
@@ -163,7 +140,7 @@
 
           <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>이곳에 프로젝트 진행도가 나오면 어떨까</h3>
               <ul>
                 <li><strong>Category</strong> Web design</li>
                 <li><strong>Client</strong> ASU Company</li>
