@@ -26,19 +26,23 @@
   <!-- Main CSS File -->
   <link href="/css/main.css" rel="stylesheet">
 <style>
-    table {
-      border: 1px solid black;
-      border-collapse: collapse;
-      margin: 20px; 
-      padding: 10px; 
-    }
-    
-      th, td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;
-  }
+	table, tr, td {
+	  border-collapse: collapse;
+	  margin: 20px;
+	  padding: 10px;
+	}
+	
+	th, td {
+	  border: 1px solid white;
+	  text-align: center;
+	}
+	
+	tr:first-child td {
+	  background-color: #2487CE;
+	  color: white;
+	  font-weight: bold;
+	}  
+	
   
       .checkbox-group {
       text-align: left;  /* 왼쪽 정렬 */
@@ -98,7 +102,7 @@
 
       <div class="container" data-aos="fade-up">
          <table style="margin: 0 auto;">
-         	<tr><th>이름</th> <th>주소</th> <th>전화번호</th> <th>주 분야</th>  <th>경력</th> <th>특이사항</th> </tr>
+         	<tr><td>이름</td> <td>주소</td> <td>전화번호</td> <td>주 분야</td>  <td>경력</td> <td>특이사항</td> </tr>
   			<tr><td>홍길동</td> <td>강원도 춘천시</td> <td>010-1225-5588</td> <td>금형</td> <td>23년 4개월</td> <td>원격지도 선호</td></tr>
   			<tr><td>감자</td> <td>강원도 원주시</td> <td>010-9955-5511</td> <td>사출</td> <td>18년 9개월</td> <td>현장 근무 선호</td></tr>
         </table>

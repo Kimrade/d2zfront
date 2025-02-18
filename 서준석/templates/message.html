@@ -27,19 +27,23 @@
   <!-- Main CSS File -->
   <link href="/css/main.css" rel="stylesheet">
 <style>
-    table {
-      border: 1px solid black;
-      border-collapse: collapse;
-      margin: 20px; 
-      padding: 10px; 
-    }
-    
-      th, td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;
-  }
+	table, tr, td {
+	  border-collapse: collapse;
+	  margin: 20px;
+	  padding: 10px;
+	}
+	
+	th, td {
+	  border: 1px solid white;
+	  text-align: center;
+	}
+	
+	tr:first-child td {
+	  background-color: #2487CE;
+	  color: white;
+	  font-weight: bold;
+	}  
+
     </style>
 </head>
 
@@ -109,7 +113,7 @@
       <div class="container" data-aos="fade-up">
         <p style = "text-align: center;">새로온 쪽지가 있습니다.</p>
          <table style="margin: 0 auto;">
-        	<tr><th>번호</th><th>제목</th><th>내용</th><th>보낸사람</th></tr>
+        	<tr><td>번호</td><td>제목</td><td>내용</td><td>보낸사람</td></tr>
         	<tr><td>1</td><td>귀하의 지원에 감사...</td><td>지원하신 공고는...</td><td>AA다이캐스팅</td>
         </table>
       </div>

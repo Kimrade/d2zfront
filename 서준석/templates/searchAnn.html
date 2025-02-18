@@ -27,19 +27,23 @@
   <!-- Main CSS File -->
   <link href="/css/main.css" rel="stylesheet">
 <style>
-    table {
-      border: 1px solid black;
-      border-collapse: collapse;
-      margin: 20px; 
-      padding: 10px; 
-    }
-    
-      th, td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;
-  }
+	table, tr, td {
+	  border-collapse: collapse;
+	  margin: 20px;
+	  padding: 10px;
+	}
+	
+	th, td {
+	  border: 1px solid white;
+	  text-align: center;
+	}
+	
+	tr:first-child td {
+	  background-color: #2487CE;
+	  color: white;
+	  font-weight: bold;
+	}  
+	
     </style>
 </head>
 
@@ -86,7 +90,7 @@
 
       <div class="container" data-aos="fade-up">
          <table style="margin: 0 auto;">
-        	<tr><th>회사명</th> <th>모집분야</th> <th>모집인원</th> <th>근무위치</th>  <th>근무방식</th> <th>근무기간</th> </tr>
+        	<tr><td>회사명</td> <td>모집분야</td> <td>모집인원</td> <td>근무위치</td>  <td>근무방식</td> <td>근무기간</td> </tr>
     		<tr><td>AA다이캐스팅</td> <td>금형</td> <td>2명</td> <td>강원도 춘천시 석사동</td> <td>현장방문, 원격</td> <td>3개월</td></tr>
     		<tr><td>BB다이캐스팅</td> <td>사출</td> <td>1명</td> <td>강원도 원주시 단계동</td> <td>현장방문</td> <td>1개월</td></tr>
 

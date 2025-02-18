@@ -27,20 +27,32 @@
   <!-- Main CSS File -->
   <link href="/css/main.css" rel="stylesheet">
   <style>
-    table, tr, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
-      margin: 20px; 
-      padding: 10px; 
-    }
-    
+	table, tr, td {
+	  border-collapse: collapse;
+	  margin: 20px;
+	  padding: 10px;
+	}
+	
+	th, td {
+	  border: 1px solid white;
+	  text-align: center;
+	}
+	
+	tr:first-child td {
+	  background-color: #2487CE;
+	  color: white;
+	  font-weight: bold;
+	}  
+	
      .portfolio-description h2 {
-    text-align: center; 
-  }
-	.portfolio-description table {
-    margin: 20px auto; 
-  }
+	    text-align: center; 
+	  }
+		.portfolio-description table {
+	    margin: 20px auto; 
+	  }
+  
   </style>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body class="portfolio-details-page">
@@ -54,7 +66,7 @@
         <h1 class="sitename">D2Z</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">-
+      <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="/main">Home<br></a></li>
           <li><a href="/announce">공고 등록</a></li>
@@ -63,11 +75,12 @@
 		<ul>
             <li class="dropdown"><a href="#"><span>MyPage</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
+              	<li><a>AA다이캐스팅님 환영합니다</a></li>
                 <li><a href="/companyedit">내정보 수정</a></li>
                 <li><a href="/message">쪽지함 확인</a></li>
               </ul>
-          </ul>
-           <li><a>AA다이캐스팅님 환영합니다</a></li>
+   		 </ul>
+           
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
     </div>
@@ -78,7 +91,7 @@
     <!-- Page Title -->
     <div class="page-title accent-background">
       <div class="container">
-        <h1>기업체 여러분 환영합니다</h1><br>
+        <h1>기업체 여러분 환영합니다</h1>
         <nav class="breadcrumbs">
           <ol>
           	<li class="current">귀사의 발전에 다장이 함께 하겠습니다.</li>
@@ -101,11 +114,10 @@
               <h2>현재 사업 진행 현황</h2>
               <p>
                 <table>
-                  <tr><th>no</th> <th>공고명</th> <th>기간</th> <th>과제명</th> <th>매칭여부</th> <th>엔지니어</th> </tr>
+                  <tr><td>no</td> <td>공고명</td> <td>기간</td> <td>과제명</td> <td>매칭여부</td> <td>엔지니어</td> </tr>
                   <tr><td>1</td> <td><a href="/companyProgress">AA다이캐스팅 지도방문</a></td> <td>25.02.01 ~ 25.06.30</td> <td>AA다이캐스팅 지도방문</td><td>O</td> <td>김감자</td></tr>
-                  <tr><td>2</td> <td></a>AA다이캐스팅 현장방문</a></td> <td>25.02.01 ~ 25.06.30</td> <td>AA다이캐스팅 현장방문</td><td>X</td> <td>지원자없음</td></tr>
+                  <tr><td>2</td> <td><a>AA다이캐스팅 현장방문</a></td> <td>25.02.01 ~ 25.06.30</td> <td>AA다이캐스팅 현장방문</td><td>X</td> <td>지원자없음</td></tr>
                 </table>
-              </p>
             </div>
           </div>
 
@@ -208,5 +220,4 @@
   <script src="/js/main.js"></script>
 
 </body>
-
 </html>
